@@ -1,8 +1,7 @@
 /**
- * @author SoyPandax
+ * @author DevAlex
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
  */
-
 let head = {
     inner: [
         [8, 8, 8, 8],
@@ -20,8 +19,7 @@ let head = {
         [40, 0, 8, 8],
         [48, 0, 8, 8]
     ]
-}
-
+};
 let body = {
     inner: [
         [20, 20, 8, 12],
@@ -39,10 +37,5 @@ let body = {
         [20, 32, 8, 4],
         [28, 32, 8, 4]
     ]
-}
-
-
-export {
-    head as head,
-    body as body
-}
+};
+export { head as head, body as body };

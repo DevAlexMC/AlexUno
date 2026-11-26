@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
-    <title>Light Client</title>
+    <title>Cargando...</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <style>
         /* Solo ajustes rápidos en línea, la mayor parte está en index.css */
@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--background); 
+            background-image: #d8092100;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,18 +25,12 @@
             color: white;
         }
 
-        #splash img.splash {
-            width: 180px;
-            height: 180px;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <div id="splash">
         <img class="splash" src="assets/images/icon.png" />
-        <p class="title">Iniciando Light Client</p>
-        <!-- Mensajes dinámicos que usa index.js -->
+
         <p class="splash-message"></p>
         <p class="message"></p>
         <progress value="0" max="100" class="progress"></progress>

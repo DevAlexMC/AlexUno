@@ -1,0 +1,60 @@
+.panel.authorization {
+    background: #000;
+    color: #fff;
+    overflow: auto;
+}
+.light-auth-content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: clamp(24px,4vw,64px);
+    padding-bottom: 150px;
+    font-weight: 400;
+}
+.light-auth-content h1 {
+    color: #d80921;
+    font-size: clamp(28px,3vw,42px);
+    margin: 0 0 24px;
+    font-weight: 800;
+}
+.light-auth-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+.light-auth-content button {
+    background: #d80921;
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.light-auth-content button:disabled {
+    opacity: .5;
+    cursor: wait;
+}
+.light-auth-form {
+    position: absolute;
+    right: clamp(24px,4vw,64px);
+    bottom: 32px;
+    max-width: calc(100% - 48px);
+}
+.light-auth-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.light-auth-form div {
+    display: flex;
+    gap: 8px;
+}
+.light-auth-form input {
+    min-width: 0;
+    width: 230px;
+    background: #19191c;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+    font: inherit;
+}

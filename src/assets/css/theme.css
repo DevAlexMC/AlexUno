@@ -4,7 +4,6 @@
     --dark-color: #292929;
     --light-color: #232323;
 }
-
 .dark {
     --color: #ffffff;
     --background: #44444489;
@@ -13,7 +12,6 @@
     --shadow: #464646b3;
     --svg-color: brightness(0) saturate(100%) invert(1%) sepia(55%) saturate(23%) hue-rotate(236deg) brightness(108%) contrast(92%);
 }
-
 .light {
     --color: #ffffff;
     --background: #44444489;

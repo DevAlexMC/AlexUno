@@ -1,27 +1,15 @@
 <div class="settings-container">
-    <!-- Header with title and tabs -->
+
     <div class="settings-header">
-        <div class="settings-title">
-            <span class="settings-icon">⚙️</span>
-            <h1>Configuración</h1>
+        <div class="settings-title"><svg class="light-nav-svg light-header-symbol" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#b9b8c8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 2.8h3l.6 2.1a7.7 7.7 0 0 1 1.7.7l1.9-1.1 2.1 2.1-1.1 1.9c.3.5.5 1.1.7 1.7l2.1.6v3l-2.1.6a7.7 7.7 0 0 1-.7 1.7l1.1 1.9-2.1 2.1-1.9-1.1a7.7 7.7 0 0 1-1.7.7l-.6 2.1h-3l-.6-2.1a7.7 7.7 0 0 1-1.7-.7l-1.9 1.1-2.1-2.1 1.1-1.9a7.7 7.7 0 0 1-.7-1.7l-2.1-.6v-3l2.1-.6a7.7 7.7 0 0 1 .7-1.7L4.2 6.6l2.1-2.1 1.9 1.1a7.7 7.7 0 0 1 1.7-.7z"/><circle cx="12" cy="12" r="3.3"/></svg><h1>Configuración</h1>
         </div>
         <div class="settings-tabs">
-            <div id="account" class="settings-tab active-tab">
-                <span class="tab-icon"></span>
-                <span class="tab-label">Cuentas</span>
-            </div>
-            <div id="java" class="settings-tab">
-                <span class="tab-icon"></span>
-                <span class="tab-label">RAM</span>
-            </div>
-            <div id="resolution" class="settings-tab">
-                <span class="tab-icon"></span>
-                <span class="tab-label">Resolución</span>
-            </div>
-            <div id="launcher" class="settings-tab">
-                <span class="tab-icon">ℹ️</span>
-                <span class="tab-label">Launcher</span>
-            </div>
+            <div id="account" class="settings-tab active-tab" aria-label="Mi perfil" data-light-tip="Mi perfil"><span class="tab-icon"><svg class="light-nav-svg" viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="#aa78d8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7.5" r="4" fill="#67438c"/><path d="M4.5 21v-2.3a7.5 7.5 0 0 1 15 0V21" fill="#67438c"/></svg></span><span class="tab-label">Mi perfil</span></div>
+            <div id="appearance" class="settings-tab" aria-label="Skins" data-light-tip="Skins"><span class="tab-icon"><svg class="light-nav-svg" viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="#f29bb2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-2.4-2-3.3-4.3-3.3h-1.3a2.2 2.2 0 0 1-2.2-2.2c0-1.8 1.5-2.5 1.5-3.3" fill="#50333e"/><circle cx="7.5" cy="11" r="1" fill="#f6c454" stroke="none"/><circle cx="10.5" cy="7.5" r="1" fill="#86b5ed" stroke="none"/><circle cx="8.5" cy="16" r="1" fill="#d787f2" stroke="none"/></svg></span><span class="tab-label">Skins</span></div>
+            <div id="java" class="settings-tab" aria-label="RAM" data-light-tip="RAM"><span class="tab-icon"><svg class="light-nav-svg" viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="#6db4ed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="1.5" fill="#294a65"/><path d="M9 21h6M12 18v3"/></svg></span><span class="tab-label">RAM</span></div>
+            <div class="settings-title"><svg class="light-nav-svg light-header-symbol" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><g transform="rotate(38 16 16)"><rect x="12" y="2.5" width="8" height="5" rx="1.2" fill="#fa3353" stroke="#ff9aab" stroke-width="1"/><path d="M13 7.5h6l2 9H11z" fill="#e10b32" stroke="#ff8299" stroke-width="1"/><rect x="9" y="16" width="14" height="3.5" rx="1" fill="#f3264b" stroke="#ffabb9" stroke-width=".8"/><path d="M16 19.5v10" stroke="#f3f3f5" stroke-width="2.3" stroke-linecap="round"/><path d="m14.8 27.8 1.2 3 1.2-3" fill="#f3f3f5"/></g></svg><h1>Destacados</h1></div>
+            <div id="news" class="settings-tab" aria-label="Noticias" data-light-tip="Noticias"><span class="tab-icon"><svg class="light-nav-svg" viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="#c8c5d0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.2" fill="#4d4b56"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><span class="tab-label">Noticias</span><span class="light-settings-news-badge" hidden>0</span></div>
+            <div id="launcher" class="settings-tab" aria-label="Launcher" data-light-tip="Launcher"><span class="tab-icon"><svg class="light-nav-svg" viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="#69b6f4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="#245d8b"/><path d="M12 11v6M12 7h.01" stroke="white"/></svg></span><span class="tab-label">Launcher</span></div>
         </div>
         <div class="settings-actions">
             <button id="save" class="settings-close-btn">
@@ -30,133 +18,111 @@
         </div>
     </div>
 
-    <!-- Content area -->
     <div class="settings-content">
-        <!-- Account tab -->
+
         <div id="account-tab" class="settings-panel active-panel">
-            <div class="panel-header">
-                <h2>Cuentas de Jugadores</h2>
-                <p class="panel-subtitle">Gestiona tus cuentas de Minecraft</p>
-            </div>
-            <div class="settings-card">
-                <div class="accounts-list content-scroll">
-                    <div class="account" id="add">
-                        <div class="account-card add-account">
-                            <div class="add-profile-icon">
-                                <span>+</span>
-                            </div>
-                            <div class="add-text-profile">Añadir Cuenta</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="panel-header"><h2>Mi perfil</h2></div>
+          <div class="settings-card light-accounts-card">
+            <div class="light-account-actions"><button type="button" id="light-add-account" class="btn-secondary">＋ Añadir cuenta Microsoft</button><span id="light-account-feedback" role="status"></span></div>
+            <div id="light-account-cards" class="light-account-cards"></div>
+            <div class="accounts-list light-legacy-accounts" aria-hidden="true" hidden></div>
+          </div>
         </div>
 
-        <!-- RAM tab -->
+        <div id="appearance-tab" class="settings-panel content-scroll">
+          <div class="panel-header"><h2>Skins y capas</h2><p></p></div>
+          <div class="settings-card light-appearance-card">
+            <div class="light-appearance-preview"><div class="light-preview-title" id="light-preview-player-name">Jugador</div><div id="light-character-stage" class="light-character-stage" aria-label="Personaje 3D; arrastra con el mouse para girarlo"><canvas id="light-skin-canvas" class="light-skin-canvas"></canvas><button type="button" id="light-animation-toggle" class="light-animation-toggle" aria-label="Reproducir" title="Reproducir" aria-pressed="false">▶</button></div><button type="button" id="light-capes-open" class="btn-secondary">Cambiar capa</button></div>
+            <div class="light-appearance-controls">
+              <div class="light-section-heading">Skins guardadas <span id="light-wardrobe-count">(0/5)</span></div>
+              <input type="file" id="light-skin-file" accept="image/png" hidden>
+              <div id="light-wardrobe-grid"></div>
+              <div id="light-wardrobe-menu" hidden><button type="button" id="light-wardrobe-delete">Eliminar skin</button></div>
+              <div class="light-section-heading">Selecciona tu modelo</div><div id="light-model-choices" class="light-choice-grid"><button type="button" class="light-choice active" data-model="classic"><span class="light-model-silhouette classic" aria-hidden="true"><i></i><b></b><em></em></span><span>Clásico</span></button><button type="button" class="light-choice" data-model="slim"><span class="light-model-silhouette slim" aria-hidden="true"><i></i><b></b><em></em></span><span>Slim</span></button></div><select id="light-skin-model" hidden><option value="classic">Clásico</option><option value="slim">Slim</option></select>
+              <button type="button" id="light-appearance-save" class="btn-secondary light-appearance-save">Guardar cambios</button>
+              <p id="light-appearance-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+        <dialog id="light-capes-dialog"><div class="light-capes-heading"><h2>Mis capas</h2><button type="button" id="light-capes-close" aria-label="Cerrar">✕</button></div><div id="light-capes-grid"></div><p id="light-capes-status" role="status"></p><button type="button" id="light-capes-apply">Aplicar capa</button></dialog>
+
         <div id="java-tab" class="settings-panel content-scroll">
             <div class="panel-header">
                 <h2>Configuración de RAM</h2>
-                <p class="panel-subtitle">Optimiza el rendimiento de tu juego</p>
+                <p></p>
             </div>
             <div class="settings-card">
                 <div class="card-content">
                     <div class="setting-info">
-                        <p>Define la RAM asignada a tu juego. Una cantidad mayor aumentará el rendimiento del mismo.</p>
-                        <p class="info-highlight">⚠️ Se recomienda no superar el 50% de tu RAM total.</p>
+                        <p>Define la RAM asignada a tu juego. Asigna memoria a Minecraft. Elige cuánta memoria máxima podrá usar Minecraft. Asignar demasiada RAM también puede perjudicar el rendimiento.</p>
+                        <p class="info-highlight">⚠️ Deja memoria suficiente para Windows y otras aplicaciones.</p>
                     </div>
                     <div class="settings-elements content-evenly">
-                        <div class="memory-slider-container">
-                            <div class="memory-slider" min="0.5" max="8" step="0.5">
-                                <div class="slider-touch-left">
-                                    <span value="0 Go"></span>
-                                </div>
-                                <div class="slider-touch-right">
-                                    <span value="0 Go"></span>
-                                </div>
-                                <div class="slider-line">
-                                    <span></span>
-                                </div>
+                        <div class="light-ram-editor light-modrinth-ram">
+                          <div class="light-ram-heading">
+                            <label for="light-ram-range">Asignación personalizada de memoria</label>
+                            <label class="light-ram-switch" title="Activar o desactivar la edición de RAM">
+                              <input type="checkbox" id="light-ram-toggle" checked aria-label="Activar edición de RAM">
+                              <span class="light-ram-switch-track"></span>
+                            </label>
+                          </div>
+                          <div class="light-ram-controls">
+                            <span id="light-ram-min-label" class="light-ram-end">512 MB</span>
+                            <div class="light-ram-track-wrap">
+                              <div id="light-ram-ticks" class="light-ram-ticks" aria-hidden="true"></div>
+                              <input id="light-ram-range" type="range" min="512" max="8192" step="32" value="2048" aria-label="Memoria máxima para Minecraft en MB">
                             </div>
+                            <span id="light-ram-max-label" class="light-ram-end">16 GB</span>
+                            <div class="light-ram-number-wrap">
+                              <input id="light-ram-number" type="number" min="512" max="8192" step="32" value="2048" aria-label="RAM en megabytes">
+                              </div>
+                          </div>
+                          <div class="light-ram-bottom-row">
+                            <div class="light-ram-messages">
+                              <p id="light-ram-feedback" role="status" aria-live="polite"></p>
+                              <p id="light-ram-recommendation" role="status"></p>
+                            </div>
+                            <div class="light-ram-actions">
+                              <button type="button" id="light-ram-save" class="btn-secondary">Guardar RAM</button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="ram-info-block">
-                            <div class="info-item">
-                                <span class="info-label">RAM Total:</span>
-                                <span class="info-value" id="total-ram">0 GB</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">RAM Disponible:</span>
-                                <span class="info-value" id="free-ram">0 GB</span>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Resolution tab -->
-        <div id="resolution-tab" class="settings-panel">
-            <div class="panel-header">
-                <h2>Resolución de Pantalla</h2>
-                <p class="panel-subtitle">Personaliza la resolución de tu juego</p>
-            </div>
-            <div class="settings-card">
-                <div class="card-content">
-                    <div class="setting-info">
-                        <p>Establece una resolución personalizada para tu pantalla. La resolución ideal es <strong>1280 x 720</strong>.</p>
-                    </div>
-                    <div class="settings-elements content-center">
-                        <div class="resolution-input-group">
-                            <div class="input-group-item">
-                                <label>Ancho</label>
-                                <input type="number" class="width-size input-resolution" placeholder="1920">
-                            </div>
-                            <div class="resolution-separator">×</div>
-                            <div class="input-group-item">
-                                <label>Alto</label>
-                                <input type="number" class="height-size input-resolution" placeholder="1080">
-                            </div>
-                            <button class="size-reset btn-secondary">Restaurar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="news-tab" class="settings-panel content-scroll">
+          <div class="panel-header light-news-header"><div><h2>Noticias</h2><p></p></div><button type="button" class="btn-secondary" id="light-news-refresh">↻ Actualizar</button></div>
+          <div id="light-news-status" role="status" aria-live="polite"></div>
+          <div class="light-news-list"></div>
         </div>
 
-        <!-- Launcher tab -->
         <div id="launcher-tab" class="settings-panel content-scroll">
             <div class="panel-header">
                 <h2>Información del Launcher</h2>
-                <p class="panel-subtitle">Configuración y detalles del launcher</p>
+                <p></p>
             </div>
-            
-            <!-- About card -->
+
             <div class="settings-card">
-                <div class="card-title">Acerca de Bridge Client</div>
+                <div class="card-title">Acerca de Light Client</div>
                 <div class="card-content">
                     <p class="launcher-info">
-                        Este launcher fue creado por <strong>@SoyPandax</strong>, Owner de Light Studio creditos a <strong>@ImDarken</strong>, por la base 
-                        Este Está hecho para jugar muchos eventos tanto para usuarios premium como no premium.
-                        Le damos las gracias al equipo y a la comunidad por formar parte de este proyecto.
+                        Este launcher fue creado por <strong>@Alezchy</strong>,
+                        Está hecho para jugar eventos para usuarios con Minecraft premium.
+                        Le damos las gracias al equipo y a la comunidad por descargar y usar este launcher.
                     </p>
                 </div>
             </div>
 
-
-
-            <!-- Close behavior card -->
             <div class="settings-card">
-                <div class="card-title">Comportamiento al Cerrar</div>
+                <div class="card-title">Idioma</div>
                 <div class="card-content">
-                    <div class="close-box close-selector">
-                        <button class="close-btn close-launcher" title="Cerrar solo el launcher">
-                            <span>Cerrar Launcher</span>
-                        </button>
-                        <button class="close-btn close-all" title="Cerrar todo">
-                            <span>Cerrar Todo</span>
-                        </button>
-                        <button class="close-btn close-none" title="No cerrar nada">
-                            <span>No Cerrar</span>
-                        </button>
-                    </div>
+                    <label for="light-language">Selecciona el idioma del launcher.</label>
+                    <select id="light-language" class="btn-secondary" style="display:block;margin-top:12px;min-width:180px;color:white;background:#17171b;border:1px solid #555;padding:10px;">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
                 </div>
             </div>

@@ -4,7 +4,6 @@
     justify-content: center;
     height: 100%;
 }
-
 .login-tabs {
     position: absolute;
     padding: 15px;
@@ -12,70 +11,61 @@
     text-align: center;
     min-width: 40%;
 }
-
 .login-home,
 .login-offline,
 .login-AZauth,
 .login-AZauth-A2F {
     display: none;
 }
-
 .login-text2 {
     font-size: 2.9rem;
     position: relative;
-    top: -16px; /* mueve 20px hacia arriba */
+    top: -6px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
 }
-
 .login-text {
     font-size: 3rem;
     position: relative;
-    top: -2px; /* mueve 20px hacia arriba */
+    top: -2px;
 }
-
 .login-text3 {
     font-size: 3rem;
     position: relative;
-    top: -2px; /* mueve 20px hacia arriba */
-    background: linear-gradient(90deg, #e000ff, #00ffe0, #ffea00);
+    top: -2px;
+    background: linear-gradient(90deg, #ff0000, #c70000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; 
+    background-clip: text;
     color: transparent;
 }
-
 .login-text, .login-text3 {
     display: inline-block;
-    margin-right: 10px; /* separarlos un poco */
+    margin-right: 10px;
 }
-
 .login-text-identificate {
     font-size: 2.0rem;
     position: relative;
-    top: -10px; /* mueve 20px hacia arriba */
+    top: -10px;
 }
-
-/* Todos los botones (Conectar, Cancelar, Microsoft, Offline...) */
 .connect,
 .cancel {
-    background: #ff48d6;        /* Rosa */
-    color: white;               /* Texto blanco */
-    border: solid 4px #ff48d6;  /* Borde rosa */
-    border-radius: 10px;
-    padding: 0.3rem 4rem;
+    background: #ff0000;
+    color: rgb(0, 0, 0);
+    border: solid 4px #ff0000;
+    border-radius: 1px;
+    padding: 0.4rem 1.2rem;
     font-size: inherit;
     font-weight: bold;
     margin: 15px 10px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
-
 .connect:hover,
 .cancel:hover {
-    transform: scale(1.1);
-    background: #da26aa;        /* Rosa fuerte */
-    border-color: #da26aa;
+    background: #d10000;
+    border-color: #d10000;
 }
-
-
 .input-login .email,
 .input-login .password,
 .A2F {
@@ -87,41 +77,64 @@
     padding: 0.4rem 1rem;
     margin-top: 10px;
 }
-
 .login-select {
     display: none;
 }
-
-/* SOLO los botones de Microsoft y Offline (pantalla principal) */
-.select-microsoft,
-.select-offline {
-    background: #ff48d6;             /* Rosa */
-    color: white;                    /* Texto blanco */
-    border-color: #ff48d6;           /* Borde rosa fuerte */
+.select-microsoft {
+    position: relative;
+    left: 0px;
+    top: 30px;
+    background: #d10000;
+    border-color: #d10000;
+    cursor: pointer;
 }
-
+.select-offline {
+    position: relative;
+    left: 0px;
+    top: 30px;
+    background: #d10000;
+    color: rgb(0, 0, 0);
+    border-color: #d10000;
+    cursor: pointer;
+}
 .select-microsoft:hover,
 .select-offline:hover {
-    transform: scale(1.1);
-    background: #da26aa;             /* Rosa más fuerte al pasar el mouse */
+    background: #d10000;
 }
-
 .fade-out {
     opacity: 0;
-    transition: opacity 0.5s ease-out; 
-  }
-
-  html {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: hidden; /* For Internet Explorer and Edge */
+    transition: opacity 0.5s ease-out;
 }
-
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: hidden;
+}
 html::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
 }
 
-@keyframes fall{
-    to {
-      transform: translateY(105vh);
-    }
+.login-language-wrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#light-login-language {
+    width: 186px;
+    max-width: 100%;
+    padding: 8px 12px;
+    background: #151515;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 2px;
+    font: 14px Arial, sans-serif;
+    cursor: pointer;
+    color-scheme: dark;
+}
+#light-login-language:focus-visible {
+    outline: 1px solid #d10000;
 }

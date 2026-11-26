@@ -1,20 +1,20 @@
 {
-    "name": "Light-Client",
+    "name": "Light Client",
     "preductname": "Light Client",
-    "version": "1.7.8",
+    "version": "5.0.2",
     "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
-        "name": "AlexPSMC",
+        "name": "Alezchyy",
         "email": "soypancraft@gmail.com",
-        "url": "https://github.com/AlexPSMC"
+        "url": "https://github.com/DevAlexMC"
     },
-    "url": "http://172.96.172.240:25590/Launchers/LightMain",
+    "url": "http://172.96.172.240:25598/main",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/AlexPSMC/Luno-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/DevAlexMC/AlexDos/master/src/assets/images/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
@@ -22,16 +22,19 @@
         "ignore": "**/test"
     },
     "dependencies": {
+        "discord": "^0.8.2",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
         "minecraft-java-core": "^3.10.4",
         "node-bdd": "^2.0.4",
         "node-fetch": "^2.7.0",
+        "rpc": "^3.3.3",
+        "skinview3d": "^3.4.2",
         "xml-js": "^1.6.11"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^30.0.9",
+        "electron": "^45.4.1",
         "electron-builder": "^24.13.3",
         "javascript-obfuscator": "^4.1.0",
         "jimp": "^0.22.12",
@@ -40,6 +43,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AlexPSMC/Luno-Launcher.git"
+        "url": "git+https://github.com/DevAlexMC/AlexDos.git"
     }
 }

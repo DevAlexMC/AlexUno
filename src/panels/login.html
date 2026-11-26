@@ -1,12 +1,18 @@
 <div class="container">
     <div class="login-select login-tabs">
-        <div class="login-text">Please</div>
-        <div class="login-text3">Log-In</div>
-        <div class="login-text2">with your account</div>   
+        <div class="login-text">POR FAVOR</div>
+        <div class="login-text3">INICIA SESIÓN</div>
+        <div class="login-text2">CON TU CUENTA</div>
 
         <div class="login-options">
-            <button class="connect select-microsoft">Microsoft</button>
-            <button class="connect select-offline">Offline</button>
+            <button class="connect select-microsoft">Microsoft Account</button>
+            <div class="login-language-wrap">
+                <select id="light-login-language" aria-label="Idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -28,10 +34,9 @@
 
         <div class="login-options">
             <button class="connect connect-offline">Conectar</button>
-            <button class="cancel cancel-offline">Cancelar</button> <!-- Botón Cancelar agregado -->
+            <button class="cancel cancel-offline">Cancelar</button>
         </div>
     </div>
-
 
     <div class="login-AZauth login-tabs">
         <div class="login-text">Por favor inicia sesión para jugar.</div>
@@ -46,7 +51,6 @@
             <button class="cancel cancel-AZauth" style="display: none;">Cancelar</button>
         </div>
     </div>
-
 
     <div class="login-AZauth-A2F login-tabs">
         <div class="login-text">Por favor introduce el código de seguridad.</div>

@@ -2,7 +2,7 @@
     "name": "Light-Client",
     "productName": "Light Client",
     "preductname": "Light Client",
-    "version": "5.0.1",
+    "version": "5.0.2",
     "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
@@ -26,7 +26,7 @@
         "discord": "^0.8.2",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
-        "minecraft-java-core": "^3.10.4",
+        "minecraft-java-core": "file:./vendor/minecraft-java-core",
         "node-bdd": "^2.0.4",
         "node-fetch": "^2.7.0",
         "rpc": "^3.3.3",
@@ -35,7 +35,7 @@
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^45.5.0",
+        "electron": "^45.4.1",
         "electron-builder": "^24.13.3",
         "javascript-obfuscator": "^4.1.0",
         "jimp": "^0.22.12",

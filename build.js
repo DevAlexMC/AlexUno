@@ -60,7 +60,8 @@ class Index {
 
     async buildPlatform() {
         await this.Obfuscate();
-        builder.build({
+        await builder.build({
+            publish: process.env.GITHUB_ACTIONS === "true" ? "always" : "never",
             config: {
                 generateUpdatesFilesForAllChannels: false,
                 appId: preductname,
@@ -114,6 +115,7 @@ class Index {
             console.log('le build est terminé')
         }).catch(err => {
             console.error('Error during build!', err)
+            process.exitCode = 1
         })
     }
 

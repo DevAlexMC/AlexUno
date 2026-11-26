@@ -138,3 +138,27 @@ html::-webkit-scrollbar {
 #light-login-language:focus-visible {
     outline: 1px solid #d10000;
 }
+
+/* Microsoft icon and language selector */
+.login .select-microsoft::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: currentColor;
+    box-shadow: 8px 0 currentColor, 0 8px currentColor, 8px 8px currentColor;
+    margin-right: 14px;
+    vertical-align: 7px;
+}
+.login-language-wrap {
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+    font: 14px Arial, sans-serif;
+    color: #fff;
+}
+#light-login-language {
+    width: auto;
+    min-width: 95px;
+    background: #333;
+}

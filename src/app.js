@@ -10,7 +10,7 @@ const fs = require('fs');
 const RPC = require('discord-rpc');
 const UpdateWindow = require("./assets/js/windows/updateWindow.js");
 const MainWindow = require("./assets/js/windows/mainWindow.js");
-const CLIENT_ID = '1444191237614866432';
+const CLIENT_ID = '1561779992969478256';
 RPC.register(CLIENT_ID);
 const rpc = new RPC.Client({ transport: 'ipc' });
 let currentInstance = 'Sin Instancia';
@@ -27,9 +27,9 @@ async function setActivity(instanceName = currentInstance, panelName = currentPa
     }
     rpc.setActivity({
         startTimestamp: new Date(),
-        largeImageKey: 'Light',
+        largeImageKey: 'icon',
         largeImageText: 'Light Client',
-        smallImageKey: 'setve',
+        smallImageKey: 'icon',
         details: details,
         state: `Jugando: ${instanceName}`,
         instance: true,

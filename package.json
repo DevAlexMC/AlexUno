@@ -2,7 +2,7 @@
     "name": "Light-Client",
     "productName": "Light Client",
     "preductname": "Light Client",
-    "version": "5.0.2",
+    "version": "5.0.4",
     "description": "Launcher oficial de Light Studio",
     "main": "src/app.js",
     "author": {
